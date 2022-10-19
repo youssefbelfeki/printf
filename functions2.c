@@ -30,7 +30,8 @@ num_addrs = (unsigned long)addrs;
 while (num_addrs > 0)
 {
 buffer[ind--] = map_to[num_addrs % 16];
-num_addrs /= 16;length++;
+num_addrs /= 16;
+length++;
 }
 if ((flags & F_ZERO) && !(flags & F_MINUS))
 padd = '0';
