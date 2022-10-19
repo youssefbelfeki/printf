@@ -18,7 +18,7 @@ char padd = ' ';
 UNUSED(precision);
 UNUSED(size);
 if (flags & F_ZERO)
-padd = '0'
+padd = '0';
 buffer[i++] = c;
 buffer[i] = '\0';
 if (width > 1)
@@ -39,7 +39,7 @@ return (write(1, &buffer[0], 1));
 /**
  * write_number - Prints a string
  * @is_negative: Lista of arguments
- * @ind: char types.
+ * @ind: char types.i
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
