@@ -28,9 +28,10 @@ buffer[BUFF_SIZE - 1] = '\0';
 UNUSED(precision);
 num_addrs = (unsigned long)addrs;
 while (num_addrs > 0)
-{										buffer[ind--] = map_to[num_addrs % 16];
-num_addrs /= 16;
-length++;									}
+{
+buffer[ind--] = map_to[num_addrs % 16];
+num_addrs /= 16;length++;
+}
 if ((flags & F_ZERO) && !(flags & F_MINUS))
 padd = '0';
 if (flags & F_PLUS)
